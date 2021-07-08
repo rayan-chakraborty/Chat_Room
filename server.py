@@ -28,7 +28,7 @@ def handle(client):
             nicknames.remove(nickname)
             break
 
-def receive():
+def main():
     while True:
         client, address = server.accept()
         print("connected with ", str(address))
@@ -46,4 +46,4 @@ def receive():
         thread.start()
 
 print("server is listening")
-receive()
+main()
